@@ -1,0 +1,74 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://ex.org/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix baseball: <http://sabrns.com/ontology/baseball/baseball.owl#> .
+@prefix gn: <http://www.geonames.org/ontology#>.
+
+<PeopleMap> a rr:TriplesMap ;
+
+	rr:logicalTable [
+		rr:tableName "people"
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://ex.org/rdf/baseball/people/personid={peopleid}" ;
+		rr:class foaf:Person
+	] ;
+	
+	rr:predicateObjectMap [
+		rr:predicate <http://ex.org/rdf/baseball/people#personid>;
+		rr:objectMap [rr:column "peopleid"; rr:datatype xsd:string]
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate foaf:givenName;
+		rr:objectMap [rr:column "given_name"; rr:datatype xsd:string ]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:lastName;
+		rr:objectMap [rr:column "last_name"; rr:datatype xsd:string]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:birthday;
+		rr:objectMap [rr:column "birthdate"; rr:datatype xsd:date]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate gn:alternateName;
+		rr:objectMap [rr:column "birth_country"; rr:datatype xsd:string]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate <http://ex.org/rdf/baseball/people#weight>;
+		rr:objectMap [rr:column "weight"; rr:datatype xsd:double]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate <http://ex.org/rdf/baseball/people#height>;
+		rr:objectMap [rr:column "height"; rr:datatype xsd:double]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:bats;
+		rr:objectMap [rr:column "bats"; rr:datatype xsd:string]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:throws;
+		rr:objectMap [rr:column "throws"; rr:datatype xsd:string]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate <http://ex.org/rdf/baseball/people#debut>;
+		rr:objectMap [rr:column "debut"; rr:datatype xsd:date]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate <http://ex.org/rdf/baseball/people#finalgame>;
+		rr:objectMap [rr:column "final_game"; rr:datatype xsd:date]
+	].
+
+
