@@ -13,7 +13,7 @@
 <PlayerSeasonMap> a rr:TriplesMap ;
 
 	rr:logicalTable [
-		rr:sqlQuery "select playerid, year, teamid FROM player_season_appearances UNION select playerid, year, teamid FROM player_season_batting UNION select playerid, year, teamid  FROM player_season_fielding UNION select playerid, year, teamid FROM player_season_pitching ";
+		rr:sqlQuery "select playerid, year, teamid FROM player_season_appearances WHERE year>2000 UNION select playerid, year, teamid FROM player_season_batting WHERE year>2000 UNION select playerid, year, teamid  FROM player_season_fielding WHERE year>2000 UNION select playerid, year, teamid FROM player_season_pitching WHERE year>2000 ";
 		rr:sqlVersion rr:SQL2008
 	] ;
 

@@ -11,7 +11,9 @@
 <SalariesMap> a rr:TriplesMap ;
 
 	rr:logicalTable [
-		rr:tableName "salaries"
+		rr:sqlQuery "SELECT * FROM salaries WHERE year>2000 ";
+		rr:sqlVersion rr:SQL2008
+
 	] ;
 
 	rr:subjectMap [

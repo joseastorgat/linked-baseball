@@ -13,7 +13,9 @@
 <PitchingStatsMap> a rr:TriplesMap ;
 
 	rr:logicalTable [
-		rr:tableName "player_season_pitching";
+		rr:sqlQuery "SELECT * FROM player_season_pitching WHERE year>2000 ";
+		rr:sqlVersion rr:SQL2008
+
 	] ;
 
 	rr:subjectMap [
