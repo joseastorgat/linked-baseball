@@ -1,0 +1,69 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix baseball: <http://ex.org/rdf/baseball#> .
+@prefix bbcsport: <https://www.bbc.co.uk/ontologies/sport/> .
+@base <http://ex.org/>.
+
+<TeamMap> a rr:TriplesMap ;
+
+	rr:logicalTable [
+		rr:tableName "teams"
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://ex.org/rdf/baseball/teams/{teamid}" ;
+		rr:class baseball:Team, wd:Q13027888
+	] ;
+	
+	rr:predicateObjectMap [
+		rr:predicate foaf:name;
+		rr:objectMap [
+			rr:column "team_name";
+			]
+	].
+
+
+<TeamDebutMap> a rr:TriplesMap ;
+
+	rr:logicalTable [
+		rr:tableName "teams"
+	] ;
+
+	rr:subjectMap [
+		rr:template "_b_teamid={teamid};teamName={team_name};season={season_debut}" ;
+		rr:termType rr:BlankNode 
+	] ;
+	
+	rr:predicateObjectMap [
+		rr:predicate foaf:label;
+		rr:objectMap [
+			rr:template "Debut of team {teamid} as {team_name} in {season_debut} season ";
+			rr:termType rr:Literal
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:season;
+		rr:objectMap [
+			rr:column "season_debut";
+			rr:dataType xsd:gYear
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:debutName;
+		rr:objectMap [
+			rr:column "team_name";
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:debutOf;
+		rr:objectMap [
+			rr:template "http://ex.org/rdf/baseball/team/{teamid}";
+			rr:termType rr:IRI
+		]
+	].

@@ -1,0 +1,118 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix baseball: <http://ex.org/rdf/baseball#> .
+@prefix bbcsport: <https://www.bbc.co.uk/ontologies/sport/> .
+@base <http://ex.org/>.
+
+<TeamSeasonMap> a rr:TriplesMap ;
+	rr:logicalTable [
+		rr:tableName "team_season"
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://ex.org/rdf/baseball/team/season/teamid={teamid};season={year}" ;
+		rr:class baseball:SeasonParticipation, wd:Q26896697
+	] ;
+	
+	rr:predicateObjectMap [
+		rr:predicate rdf:label;
+		rr:objectMap [
+			rr:template "{year} {team_name} ({teamid}) season";
+			rr:termType rr:Literal
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:seasonOf;
+		rr:objectMap [
+			rr:template "http://ex.org/rdf/baseball/team/teamid={teamid}";
+			rr:termType rr:IRI
+		]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate bbcsport:competesIn ;
+		rr:objectMap [
+			rr:template "http://ex.org/rdf/baseball/league/{league}/{division};season={year}";
+			rr:termType rr:IRI
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:gamesPlayed;
+		rr:objectMap [
+			rr:column "games";
+			rr:datatype xsd:integer 
+		]
+	];
+
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:gamesPlayedAtHome;
+		rr:objectMap [
+			rr:column "games_at_home";
+			rr:datatype xsd:integer 
+		]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:wins;
+		rr:objectMap [
+			rr:column "wins";
+			rr:datatype xsd:integer 
+		]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:loses;
+		rr:objectMap [
+			rr:column "loses";
+			rr:datatype xsd:integer 
+		]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:divisionRank;
+		rr:objectMap [
+			rr:column "div_rank";
+			rr:datatype xsd:integer 
+		]
+	].
+
+<LeagueMap> a rr:TriplesMap ;
+	rr:logicalTable [
+		rr:sqlQuery "SELECT DISTINCT league, division, teamid, year FROM team_season WHERE div_rank=1 ";
+		rr:sqlVersion rr:SQL2008
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://ex.org/rdf/baseball/league/{league}/{division};season={year}" ;
+		rr:class baseball:DivisionSeason
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:seasonOf;
+		rr:objectMap [
+			rr:template "http://ex.org/rdf/baseball/league/{league}/{division}";
+			rr:termType rr:IRI
+			]
+	];
+
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:season;
+		rr:objectMap [
+			rr:template "year";
+			rr:dataType xsd:gYear
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:divisionWinner;
+		rr:objectMap [
+			rr:template "teamid"
+		]
+	].
