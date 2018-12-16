@@ -1,0 +1,2230 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> rdf:type owl:DatatypeProperty .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> rdf:type owl:DatatypeProperty .
+
+
+###  http://xmlns.com/foaf/0.1/label
+<http://xmlns.com/foaf/0.1/label> rdf:type owl:DatatypeProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q13027888
+<http://www.wikidata.org/entity/Q13027888> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ALT
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ALT> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Altoona Mountain City"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ANA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ANA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Anaheim Angels"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ARI
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ARI> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Arizona Diamondbacks"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ATL
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ATL> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Atlanta Braves"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BAL
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BAL> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Orioles"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BFN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BFN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Buffalo Bisons"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BFP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BFP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Buffalo Bisons"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Canaries"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Orioles"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Orioles"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Marylands"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Orioles"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLF
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLF> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Terrapins"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Orioles"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Baltimore Monumentals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BOS
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BOS> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Boston Americans"^^xsd:string ,
+                                                                                                   "Boston Red Sox"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Brooklyn Eckfords"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Brooklyn Atlantics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Brooklyn Atlantics"^^xsd:string ,
+                                                                                                   "Brooklyn Bridegrooms"^^xsd:string ,
+                                                                                                   "Brooklyn Grays"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Brooklyn Gladiators"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRF
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRF> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Brooklyn Tip-Tops"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRO
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRO> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Brooklyn Bridegrooms"^^xsd:string ,
+                                                                                                   "Brooklyn Dodgers"^^xsd:string ,
+                                                                                                   "Brooklyn Grooms"^^xsd:string ,
+                                                                                                   "Brooklyn Robins"^^xsd:string ,
+                                                                                                   "Brooklyn Superbas"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Brooklyn Ward's Wonders"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BS1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BS1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Boston Red Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BS2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BS2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Boston Reds"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Boston Beaneaters"^^xsd:string ,
+                                                                                                   "Boston Bees"^^xsd:string ,
+                                                                                                   "Boston Braves"^^xsd:string ,
+                                                                                                   "Boston Doves"^^xsd:string ,
+                                                                                                   "Boston Red Caps"^^xsd:string ,
+                                                                                                   "Boston Rustlers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Boston Reds"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Boston Reds"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BUF
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BUF> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Buffalo Blues"^^xsd:string ,
+                                                                                                   "Buffalo Buffeds"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CAL
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CAL> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "California Angels"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CH1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CH1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Chicago White Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CH2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CH2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Chicago White Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Chicago White Sox"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHF
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHF> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Chicago Chi-Feds"^^xsd:string ,
+                                                                                                   "Chicago Whales"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Chicago Colts"^^xsd:string ,
+                                                                                                   "Chicago Cubs"^^xsd:string ,
+                                                                                                   "Chicago Orphans"^^xsd:string ,
+                                                                                                   "Chicago White Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Chicago Pirates"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Chicago/Pittsburgh (Union League)"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CIN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CIN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cincinnati Redlegs"^^xsd:string ,
+                                                                                                   "Cincinnati Reds"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cleveland Forest Citys"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cleveland Blues"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cleveland Blues"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cleveland Spiders"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL5
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL5> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Columbus Buckeyes"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL6
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL6> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Columbus Solons"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLE
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLE> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cleveland Blues"^^xsd:string ,
+                                                                                                   "Cleveland Bronchos"^^xsd:string ,
+                                                                                                   "Cleveland Indians"^^xsd:string ,
+                                                                                                   "Cleveland Naps"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cleveland Infants"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cincinnati Reds"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cincinnati Red Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cincinnati Kelly's Killers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CNU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CNU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Cincinnati Outlaw Reds"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#COL
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#COL> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Colorado Rockies"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#DET
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#DET> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Detroit Tigers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#DTN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#DTN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Detroit Wolverines"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ELI
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ELI> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Elizabeth Resolutes"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#FLO
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#FLO> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Florida Marlins"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#FW1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#FW1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Fort Wayne Kekiongas"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HAR
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HAR> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Hartford Dark Blues"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HOU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HOU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Houston Astros"^^xsd:string ,
+                                                                                                   "Houston Colt .45's"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HR1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HR1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Hartford Dark Blues"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Indianapolis Blues"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Indianapolis Hoosiers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Indianapolis Hoosiers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IND
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IND> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Indianapolis Hoosiers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KC1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KC1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Kansas City Athletics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KC2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KC2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Kansas City Cowboys"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Kansas City Royals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCF
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCF> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Kansas City Packers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Kansas City Cowboys"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Kansas City Cowboys"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KEO
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KEO> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Keokuk Westerns"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LAA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LAA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Los Angeles Angels"^^xsd:string ,
+                                                                                                   "Los Angeles Angels of Anaheim"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LAN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LAN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Los Angeles Dodgers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Louisville Grays"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Louisville Colonels"^^xsd:string ,
+                                                                                                   "Louisville Eclipse"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Louisville Colonels"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Miami Marlins"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MID
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MID> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Middletown Mansfields"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIL
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIL> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Milwaukee Brewers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Minnesota Twins"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Milwaukee Braves"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Milwaukee Grays"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Milwaukee Brewers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Milwaukee Brewers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MLA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MLA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Milwaukee Brewers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MLU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MLU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Milwaukee Brewers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MON
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MON> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Montreal Expos"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NEW
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NEW> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Newark Pepper"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NH1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NH1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New Haven Elm Citys"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New York Giants"^^xsd:string ,
+                                                                                                   "New York Gothams"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New York Mutuals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New York Mutuals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New York Metropolitans"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New York Highlanders"^^xsd:string ,
+                                                                                                   "New York Yankees"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New York Mets"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "New York Giants"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#OAK
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#OAK> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Oakland Athletics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Athletics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Whites"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Centennials"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Athletics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Athletics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHI
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHI> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Blue Jays"^^xsd:string ,
+                                                                                                   "Philadelphia Phillies"^^xsd:string ,
+                                                                                                   "Philadelphia Quakers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Athletics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Athletics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Philadelphia Keystones"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PIT
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PIT> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Pittsburg Alleghenys"^^xsd:string ,
+                                                                                                   "Pittsburgh Pirates"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PRO
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PRO> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Providence Grays"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PT1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PT1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Pittsburg Alleghenys"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PTF
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PTF> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Pittsburgh Rebels"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PTP
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PTP> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Pittsburgh Burghers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RC1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RC1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Rockford Forest Citys"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RC2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RC2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Rochester Broncos"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RIC
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RIC> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Richmond Virginians"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SDN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SDN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "San Diego Padres"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SE1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SE1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Seattle Pilots"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SEA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SEA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Seattle Mariners"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SFN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SFN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "San Francisco Giants"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Red Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Brown Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Brown Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Brown Stockings"^^xsd:string ,
+                                                                                                   "St. Louis Browns"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL5
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL5> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Maroons"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Browns"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLF
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLF> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Terriers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Browns"^^xsd:string ,
+                                                                                                   "St. Louis Cardinals"^^xsd:string ,
+                                                                                                   "St. Louis Perfectos"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Louis Maroons"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SPU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SPU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "St. Paul White Caps"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SR1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SR1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Syracuse Stars"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SR2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SR2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Syracuse Stars"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TBA
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TBA> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Tampa Bay Devil Rays"^^xsd:string ,
+                                                                                                   "Tampa Bay Rays"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TEX
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TEX> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Texas Rangers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TL1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TL1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Toledo Blue Stockings"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TL2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TL2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Toledo Maumees"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TOR
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TOR> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Toronto Blue Jays"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TRN
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TRN> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Troy Trojans"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TRO
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TRO> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Troy Haymakers"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WAS
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WAS> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Nationals"^^xsd:string ,
+                                                                                                   "Washington Senators"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WIL
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WIL> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Wilmington Quicksteps"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WOR
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WOR> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Worcester Ruby Legs"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS1
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS1> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Senators"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS2
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS2> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Senators"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS3
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS3> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Olympics"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS4
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS4> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Nationals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS5
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS5> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Blue Legs"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS6
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS6> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Nationals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS7
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS7> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Nationals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS8
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS8> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Nationals"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS9
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS9> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Statesmen"^^xsd:string .
+
+
+###  http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WSU
+<http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WSU> rdf:type owl:NamedIndividual ,
+                                                                           <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team> ,
+                                                                           <http://www.wikidata.org/entity/Q13027888> ;
+                                                                  <http://xmlns.com/foaf/0.1/name> "Washington Nationals"^^xsd:string .
+
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BS1> ;
+  <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Red Stockings"^^xsd:string ;
+  <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+  <http://xmlns.com/foaf/0.1/label> "Debut of team BS1 as Boston Red Stockings in 1871 season "^^xsd:string
+] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CH1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago White Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CH1 as Chicago White Stockings in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Eckfords"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1872 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BR1 as Brooklyn Eckfords in 1872 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SR2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Syracuse Stars"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SR2 as Syracuse Stars in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TL2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Toledo Maumees"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TL2 as Toledo Maumees in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Grooms"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1891 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BRO as Brooklyn Grooms in 1891 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BS2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Reds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1891 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BS2 as Boston Reds in 1891 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cincinnati Kelly's Killers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1891 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CN3 as Cincinnati Kelly's Killers in 1891 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Milwaukee Brewers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1891 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ML3 as Milwaukee Brewers in 1891 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PIT> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Pittsburgh Pirates"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1891 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PIT as Pittsburgh Pirates in 1891 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS9> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Statesmen"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1891 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS9 as Washington Statesmen in 1891 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Orioles"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1892 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BLN as Baltimore Orioles in 1892 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Louisville Colonels"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1892 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team LS3 as Louisville Colonels in 1892 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Atlantics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1872 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BR2 as Brooklyn Atlantics in 1872 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Browns"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1892 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SLN as St. Louis Browns in 1892 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WAS> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Senators"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1892 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WAS as Washington Senators in 1892 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago Orphans"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1898 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHN as Chicago Orphans in 1898 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Superbas"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1899 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BRO as Brooklyn Superbas in 1899 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Perfectos"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1899 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SLN as St. Louis Perfectos in 1899 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Cardinals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1900 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SLN as St. Louis Cardinals in 1900 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Orioles"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BLA as Baltimore Orioles in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BOS> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Americans"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BOS as Boston Americans in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago White Sox"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHA as Chicago White Sox in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLE> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Blues"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CLE as Cleveland Blues in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MID> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Middletown Mansfields"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1872 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team MID as Middletown Mansfields in 1872 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#DET> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Detroit Tigers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team DET as Detroit Tigers in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MLA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Milwaukee Brewers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team MLA as Milwaukee Brewers in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Athletics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PHA as Philadelphia Athletics in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Senators"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1901 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS1 as Washington Senators in 1901 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLE> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Bronchos"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1902 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CLE as Cleveland Bronchos in 1902 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Browns"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1902 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SLA as St. Louis Browns in 1902 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago Cubs"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1903 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHN as Chicago Cubs in 1903 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLE> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Naps"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1903 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CLE as Cleveland Naps in 1903 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Highlanders"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1903 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NYA as New York Highlanders in 1903 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Doves"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1907 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSN as Boston Doves in 1907 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Nationals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1872 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS4 as Washington Nationals in 1872 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BOS> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Red Sox"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1908 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BOS as Boston Red Sox in 1908 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Dodgers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1911 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BRO as Brooklyn Dodgers in 1911 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Rustlers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1911 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSN as Boston Rustlers in 1911 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Braves"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1912 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSN as Boston Braves in 1912 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Yankees"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1913 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NYA as New York Yankees in 1913 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Terrapins"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BLF as Baltimore Terrapins in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Tip-Tops"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BRF as Brooklyn Tip-Tops in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Robins"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BRO as Brooklyn Robins in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BUF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Buffalo Buffeds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BUF as Buffalo Buffeds in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago Chi-Feds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHF as Chicago Chi-Feds in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Marylands"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1873 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BL4 as Baltimore Marylands in 1873 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IND> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Indianapolis Hoosiers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team IND as Indianapolis Hoosiers in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Kansas City Packers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team KCF as Kansas City Packers in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PTF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Pittsburgh Rebels"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PTF as Pittsburgh Rebels in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Terriers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1914 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SLF as St. Louis Terriers in 1914 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BUF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Buffalo Blues"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1915 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BUF as Buffalo Blues in 1915 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHF> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago Whales"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1915 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHF as Chicago Whales in 1915 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLE> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Indians"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1915 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CLE as Cleveland Indians in 1915 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NEW> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Newark Pepper"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1915 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NEW as Newark Pepper in 1915 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Bees"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1936 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSN as Boston Bees in 1936 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHI> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Blue Jays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1943 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PHI as Philadelphia Blue Jays in 1943 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ELI> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Elizabeth Resolutes"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1873 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ELI as Elizabeth Resolutes in 1873 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Milwaukee Braves"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1953 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ML1 as Milwaukee Braves in 1953 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BAL> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Orioles"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1954 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BAL as Baltimore Orioles in 1954 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CIN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cincinnati Redlegs"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1954 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CIN as Cincinnati Redlegs in 1954 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KC1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Kansas City Athletics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1955 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team KC1 as Kansas City Athletics in 1955 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LAN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Los Angeles Dodgers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1958 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team LAN as Los Angeles Dodgers in 1958 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SFN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "San Francisco Giants"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1958 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SFN as San Francisco Giants in 1958 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LAA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Los Angeles Angels"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1961 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team LAA as Los Angeles Angels in 1961 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Minnesota Twins"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1961 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team MIN as Minnesota Twins in 1961 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Senators"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1961 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS2 as Washington Senators in 1961 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HOU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Houston Colt .45's"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1962 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team HOU as Houston Colt .45's in 1962 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Whites"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1873 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PH2 as Philadelphia Whites in 1873 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Mets"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1962 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NYN as New York Mets in 1962 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CAL> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "California Angels"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1965 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CAL as California Angels in 1965 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HOU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Houston Astros"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1965 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team HOU as Houston Astros in 1965 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ATL> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Atlanta Braves"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1966 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ATL as Atlanta Braves in 1966 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#OAK> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Oakland Athletics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1968 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team OAK as Oakland Athletics in 1968 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Kansas City Royals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1969 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team KCA as Kansas City Royals in 1969 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MON> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Montreal Expos"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1969 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team MON as Montreal Expos in 1969 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SDN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "San Diego Padres"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1969 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SDN as San Diego Padres in 1969 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SE1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Seattle Pilots"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1969 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SE1 as Seattle Pilots in 1969 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Milwaukee Brewers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1970 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ML4 as Milwaukee Brewers in 1970 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS5> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Blue Legs"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1873 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS5 as Washington Blue Legs in 1873 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TEX> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Texas Rangers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1972 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TEX as Texas Rangers in 1972 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SEA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Seattle Mariners"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1977 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SEA as Seattle Mariners in 1977 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TOR> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Toronto Blue Jays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1977 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TOR as Toronto Blue Jays in 1977 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#COL> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Colorado Rockies"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1993 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team COL as Colorado Rockies in 1993 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#FLO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Florida Marlins"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1993 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team FLO as Florida Marlins in 1993 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ANA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Anaheim Angels"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1997 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ANA as Anaheim Angels in 1997 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ARI> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Arizona Diamondbacks"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1998 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ARI as Arizona Diamondbacks in 1998 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIL> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Milwaukee Brewers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1998 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team MIL as Milwaukee Brewers in 1998 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TBA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Tampa Bay Devil Rays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1998 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TBA as Tampa Bay Devil Rays in 1998 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LAA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Los Angeles Angels of Anaheim"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 2005 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team LAA as Los Angeles Angels of Anaheim in 2005 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CH2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago White Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1874 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CH2 as Chicago White Stockings in 1874 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WAS> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Nationals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 2005 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WAS as Washington Nationals in 2005 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TBA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Tampa Bay Rays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 2008 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TBA as Tampa Bay Rays in 2008 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MIA> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Miami Marlins"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 2012 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team MIA as Miami Marlins in 2012 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HR1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Hartford Dark Blues"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1874 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team HR1 as Hartford Dark Blues in 1874 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Forest Citys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CL1 as Cleveland Forest Citys in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KEO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Keokuk Westerns"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1875 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team KEO as Keokuk Westerns in 1875 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NH1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New Haven Elm Citys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1875 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NH1 as New Haven Elm Citys in 1875 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Centennials"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1875 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PH3 as Philadelphia Centennials in 1875 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Red Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1875 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SL1 as St. Louis Red Stockings in 1875 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Brown Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1875 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SL2 as St. Louis Brown Stockings in 1875 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS6> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Nationals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1875 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS6 as Washington Nationals in 1875 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Red Caps"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSN as Boston Red Caps in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago White Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHN as Chicago White Stockings in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cincinnati Reds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CN1 as Cincinnati Reds in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#HAR> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Hartford Dark Blues"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team HAR as Hartford Dark Blues in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#FW1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Fort Wayne Kekiongas"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team FW1 as Fort Wayne Kekiongas in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Louisville Grays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team LS1 as Louisville Grays in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Mutuals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NY3 as New York Mutuals in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Athletics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PHN as Philadelphia Athletics in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Brown Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1876 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SL3 as St. Louis Brown Stockings in 1876 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Indianapolis Blues"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1878 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team IN1 as Indianapolis Blues in 1878 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ML2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Milwaukee Grays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1878 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ML2 as Milwaukee Grays in 1878 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PRO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Providence Grays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1878 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PRO as Providence Grays in 1878 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BFN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Buffalo Bisons"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1879 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BFN as Buffalo Bisons in 1879 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Blues"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1879 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CL2 as Cleveland Blues in 1879 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SR1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Syracuse Stars"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1879 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SR1 as Syracuse Stars in 1879 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Mutuals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NY2 as New York Mutuals in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TRN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Troy Trojans"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1879 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TRN as Troy Trojans in 1879 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WOR> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Worcester Ruby Legs"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1880 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WOR as Worcester Ruby Legs in 1880 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#DTN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Detroit Wolverines"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1881 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team DTN as Detroit Wolverines in 1881 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Orioles"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1882 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BL2 as Baltimore Orioles in 1882 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CN2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cincinnati Red Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1882 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CN2 as Cincinnati Red Stockings in 1882 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Louisville Eclipse"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1882 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team LS2 as Louisville Eclipse in 1882 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Athletics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1882 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PH4 as Philadelphia Athletics in 1882 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PT1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Pittsburg Alleghenys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1882 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PT1 as Pittsburg Alleghenys in 1882 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Brown Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1882 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SL4 as St. Louis Brown Stockings in 1882 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Beaneaters"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1883 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSN as Boston Beaneaters in 1883 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PH1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Athletics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PH1 as Philadelphia Athletics in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL5> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Columbus Buckeyes"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1883 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CL5 as Columbus Buckeyes in 1883 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Gothams"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1883 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NY1 as New York Gothams in 1883 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Metropolitans"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1883 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NY4 as New York Metropolitans in 1883 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHI> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Quakers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1883 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PHI as Philadelphia Quakers in 1883 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Browns"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1883 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SL4 as St. Louis Browns in 1883 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#ALT> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Altoona Mountain City"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team ALT as Altoona Mountain City in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BLU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Monumentals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BLU as Baltimore Monumentals in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Atlantics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BR3 as Brooklyn Atlantics in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Reds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSU as Boston Reds in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago/Pittsburgh (Union League)"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHU as Chicago/Pittsburgh (Union League) in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RC1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Rockford Forest Citys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team RC1 as Rockford Forest Citys in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CNU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cincinnati Outlaw Reds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CNU as Cincinnati Outlaw Reds in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Indianapolis Hoosiers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team IN2 as Indianapolis Hoosiers in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Kansas City Cowboys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team KCU as Kansas City Cowboys in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#MLU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Milwaukee Brewers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team MLU as Milwaukee Brewers in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Keystones"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PHU as Philadelphia Keystones in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RIC> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Richmond Virginians"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team RIC as Richmond Virginians in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SLU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Maroons"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SLU as St. Louis Maroons in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SPU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Paul White Caps"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SPU as St. Paul White Caps in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TL1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Toledo Blue Stockings"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TL1 as Toledo Blue Stockings in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WIL> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Wilmington Quicksteps"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WIL as Wilmington Quicksteps in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#TRO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Troy Haymakers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team TRO as Troy Haymakers in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS7> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Nationals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS7 as Washington Nationals in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WSU> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Nationals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1884 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WSU as Washington Nationals in 1884 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Grays"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1885 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BR3 as Brooklyn Grays in 1885 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#LS2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Louisville Colonels"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1885 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team LS2 as Louisville Colonels in 1885 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NY1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Giants"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1885 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NY1 as New York Giants in 1885 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#SL5> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "St. Louis Maroons"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1885 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team SL5 as St. Louis Maroons in 1885 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KCN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Kansas City Cowboys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1886 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team KCN as Kansas City Cowboys in 1886 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS8> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Nationals"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1886 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS8 as Washington Nationals in 1886 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Blues"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1887 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CL3 as Cleveland Blues in 1887 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#IN3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Indianapolis Hoosiers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1887 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team IN3 as Indianapolis Hoosiers in 1887 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#WS3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Washington Olympics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1871 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team WS3 as Washington Olympics in 1871 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PIT> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Pittsburg Alleghenys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1887 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PIT as Pittsburg Alleghenys in 1887 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Bridegrooms"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1888 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BR3 as Brooklyn Bridegrooms in 1888 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#KC2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Kansas City Cowboys"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1888 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team KC2 as Kansas City Cowboys in 1888 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Spiders"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1889 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CL4 as Cleveland Spiders in 1889 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CL6> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Columbus Solons"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1889 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CL6 as Columbus Solons in 1889 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BFP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Buffalo Bisons"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BFP as Buffalo Bisons in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL3> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Orioles"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BL3 as Baltimore Orioles in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BR4> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Gladiators"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BR4 as Brooklyn Gladiators in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRO> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Bridegrooms"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BRO as Brooklyn Bridegrooms in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BRP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Brooklyn Ward's Wonders"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BRP as Brooklyn Ward's Wonders in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BL1> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Baltimore Canaries"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1872 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BL1 as Baltimore Canaries in 1872 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#BSP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Boston Reds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team BSP as Boston Reds in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago Colts"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHN as Chicago Colts in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CHP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Chicago Pirates"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CHP as Chicago Pirates in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CIN> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cincinnati Reds"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CIN as Cincinnati Reds in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#CLP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Cleveland Infants"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team CLP as Cleveland Infants in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#NYP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "New York Giants"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team NYP as New York Giants in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHI> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Phillies"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PHI as Philadelphia Phillies in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PHP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Philadelphia Athletics"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PHP as Philadelphia Athletics in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#PTP> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Pittsburgh Burghers"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team PTP as Pittsburgh Burghers in 1890 season "^^xsd:string
+ ] .
+
+[ <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutOf> <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#RC2> ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#debutName> "Rochester Broncos"^^xsd:string ;
+   <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season> 1890 ;
+   <http://xmlns.com/foaf/0.1/label> "Debut of team RC2 as Rochester Broncos in 1890 season "^^xsd:string
+ ] .
+
+###  Generated by the OWL API (version 4.2.8) https://github.com/owlcs/owlapi
