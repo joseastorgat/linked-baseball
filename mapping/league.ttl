@@ -1,0 +1,45 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix bbcsport: <https://www.bbc.co.uk/ontologies/sport/> .
+
+@prefix baseball: <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#> .
+@base <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/>.
+
+
+<LeagueMap> a rr:TriplesMap ;
+	rr:logicalTable [
+		rr:sqlQuery "SELECT DISTINCT league, division, teamid, year FROM team_season WHERE div_rank=1 ";
+		rr:sqlVersion rr:SQL2008
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/league.ttl#{league}-{division};season={year}" ;
+		rr:class baseball:DivisionSeason
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:seasonOf;
+		rr:objectMap[
+			rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/league.ttl#{league}-{division}";
+			rr:termType rr:IRI
+			]
+	];
+
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:season;
+		rr:objectMap [
+			rr:template "year";
+			rr:dataType xsd:gYear
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:divisionWinner;
+		rr:objectMap [
+			rr:template "teamid"
+		]
+	].

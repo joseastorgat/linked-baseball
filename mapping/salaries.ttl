@@ -1,0 +1,26 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix baseball: <http://sabrns.com/ontology/baseball/baseball.owl#> .
+@prefix gn: <http://www.geonames.org/ontology#>.
+@prefix bbcsport: <https://www.bbc.co.uk/ontologies/sport/> .
+#ontologia baseball
+@prefix baseball: <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#> .
+@base <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/>.
+
+<SalariesMap> a rr:TriplesMap ;
+
+	rr:logicalTable [
+		rr:tableName "salaries"
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/playerSeason.ttl#{playerid};season={year};team={teamid}";
+	] ;
+		
+	rr:predicateObjectMap [
+		rr:predicate baseball:salary;
+		rr:objectMap [
+			rr:column "salary";
+		]
+	].
