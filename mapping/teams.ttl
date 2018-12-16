@@ -3,18 +3,19 @@
 @prefix schema: <http://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
-@prefix baseball: <http://ex.org/rdf/baseball#> .
 @prefix bbcsport: <https://www.bbc.co.uk/ontologies/sport/> .
-@base <http://ex.org/>.
+@prefix baseball: <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#> .
+
+@base <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/>.
 
 <TeamMap> a rr:TriplesMap ;
-
+	
 	rr:logicalTable [
 		rr:tableName "teams"
 	] ;
 
 	rr:subjectMap [
-		rr:template "http://ex.org/rdf/baseball/teams/{teamid}" ;
+		rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#{teamid}" ;
 		rr:class baseball:Team, wd:Q13027888
 	] ;
 	
@@ -63,7 +64,7 @@
 	rr:predicateObjectMap [
 		rr:predicate baseball:debutOf;
 		rr:objectMap [
-			rr:template "http://ex.org/rdf/baseball/team/{teamid}";
+			rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#{teamid}";
 			rr:termType rr:IRI
 		]
 	].

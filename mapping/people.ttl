@@ -1,9 +1,13 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@base <http://ex.org/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix baseball: <http://sabrns.com/ontology/baseball/baseball.owl#> .
 @prefix gn: <http://www.geonames.org/ontology#>.
+
+#ontologia baseball
+@prefix baseball: <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#>.
+
+@base <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/>.
 
 <PeopleMap> a rr:TriplesMap ;
 
@@ -12,15 +16,10 @@
 	] ;
 
 	rr:subjectMap [
-		rr:template "http://ex.org/rdf/baseball/people/personid={peopleid}" ;
+		rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/people.ttl#{peopleid}" ;
 		rr:class foaf:Person
 	] ;
-	
-	rr:predicateObjectMap [
-		rr:predicate <http://ex.org/rdf/baseball/people#personid>;
-		rr:objectMap [rr:column "peopleid"; rr:datatype xsd:string]
-	];
-	
+		
 	rr:predicateObjectMap [
 		rr:predicate foaf:givenName;
 		rr:objectMap [rr:column "given_name"; rr:datatype xsd:string ]
@@ -42,12 +41,12 @@
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate <http://ex.org/rdf/baseball/people#weight>;
+		rr:predicate baseball:weight;
 		rr:objectMap [rr:column "weight"; rr:datatype xsd:double]
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate <http://ex.org/rdf/baseball/people#height>;
+		rr:predicate baseball:height;
 		rr:objectMap [rr:column "height"; rr:datatype xsd:double]
 	];
 
@@ -62,13 +61,11 @@
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate <http://ex.org/rdf/baseball/people#debut>;
+		rr:predicate baseball:debut;
 		rr:objectMap [rr:column "debut"; rr:datatype xsd:date]
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate <http://ex.org/rdf/baseball/people#finalgame>;
+		rr:predicate baseball:finalgame;
 		rr:objectMap [rr:column "final_game"; rr:datatype xsd:date]
 	].
-
-
