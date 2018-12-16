@@ -1,0 +1,44 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix baseball: <http://sabrns.com/ontology/baseball/baseball.owl#> .
+@prefix gn: <http://www.geonames.org/ontology#>.
+@prefix bbcsport: <https://www.bbc.co.uk/ontologies/sport/> .
+
+#ontologia baseball
+@prefix baseball: <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#> .
+
+@base <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/>.
+
+<PlayerSeasonMap> a rr:TriplesMap ;
+
+	rr:logicalTable [
+		rr:sqlQuery "select playerid, year, teamid FROM player_season_appearances UNION select playerid, year, teamid FROM player_season_batting UNION select playerid, year, teamid  FROM player_season_fielding UNION select playerid, year, teamid FROM player_season_pitching ";
+		rr:sqlVersion rr:SQL2008
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/playerSeason.ttl#{playerid};season={year};team={teamid}" ;
+		rr:class baseball:PlayerSeason
+	] ;
+		
+	rr:predicateObjectMap [
+		rr:predicate baseball:seasonOf;
+		rr:objectMap [
+			rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/people.ttl#{playerid}"; 
+			rr:termType rr:IRI ]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:playedIn;
+		rr:objectMap [
+			rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl#{teamid}";
+			rr:termType rr:IRI]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:season;
+		rr:objectMap [
+			rr:column "year"; 
+			rr:datatype xsd:gYear]
+	].

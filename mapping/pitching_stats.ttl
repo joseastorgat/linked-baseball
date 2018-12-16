@@ -1,0 +1,213 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix baseball: <http://sabrns.com/ontology/baseball/baseball.owl#> .
+@prefix gn: <http://www.geonames.org/ontology#>.
+@prefix bbcsport: <https://www.bbc.co.uk/ontologies/sport/> .
+
+#ontologia baseball
+@prefix baseball: <http://users.dcc.uchile.cl/~jastorga/rdf/baseball#> .
+
+@base <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/>.
+
+<PitchingStatsMap> a rr:TriplesMap ;
+
+	rr:logicalTable [
+		rr:tableName "player_season_pitching";
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/pitching_stats.ttl#{playerid};season={year};team={teamid};stint={stint}" ;
+		rr:class baseball:PitchingStats
+	] ;
+		
+	rr:predicateObjectMap [
+		rr:predicate baseball:statsOf;
+		rr:objectMap [
+			rr:template "http://users.dcc.uchile.cl/~jastorga/rdf/baseball/playerSeason.ttl#{playerid};season={year};team={teamid}"; 
+			rr:termType rr:IRI ]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:stint;
+		rr:objectMap [
+			rr:column "stint"
+			]
+	];
+
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:w;
+		rr:objectMap [
+			rr:column "w"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:l;
+		rr:objectMap [
+			rr:column "l"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:g;
+		rr:objectMap [
+			rr:column "g"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:gs;
+		rr:objectMap [
+			rr:column "gs"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:cg;
+		rr:objectMap [
+			rr:column "cg"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:sho;
+		rr:objectMap [
+			rr:column "sho"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:sv;
+		rr:objectMap [
+			rr:column "sv"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:ipouts;
+		rr:objectMap [
+			rr:column "ipouts"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:h;
+		rr:objectMap [
+			rr:column "h"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:er;
+		rr:objectMap [
+			rr:column "er"
+			]
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate baseball:hr;
+		rr:objectMap [
+			rr:column "hr"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:bb;
+		rr:objectMap [
+			rr:column "bb"
+			]
+	];
+	
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:so;
+		rr:objectMap [
+			rr:column "so"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:baopp;
+		rr:objectMap [
+			rr:column "baopp"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:era;
+		rr:objectMap [
+			rr:column "era"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:ibb;
+		rr:objectMap [
+			rr:column "ibb"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:wp;
+		rr:objectMap [
+			rr:column "wp"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:hbp;
+		rr:objectMap [
+			rr:column "hbp"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:bk;
+		rr:objectMap [
+			rr:column "bk"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:bfp;
+		rr:objectMap [
+			rr:column "bfp"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:gf;
+		rr:objectMap [
+			rr:column "gf"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:r;
+		rr:objectMap [
+			rr:column "r"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:sh;
+		rr:objectMap [
+			rr:column "sh"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:sf;
+		rr:objectMap [
+			rr:column "sf"
+			]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate baseball:gidp;
+		rr:objectMap [
+			rr:column "gidp"
+			]
+	].
