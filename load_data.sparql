@@ -1,0 +1,47 @@
+#1
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/people.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/people.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/people.ttl>
+
+#2
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl>
+
+#3
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teamSeason.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teamSeason.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teamSeason.ttl>
+
+#4
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/league.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/league.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/league.ttl>
+
+#5
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/playerSeason.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/playerSeason.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/playerSeason.ttl>
+
+#6
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/salaries.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/playerSeason.ttl>
+
+#7
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/batting_stats.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/batting_stats.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/batting_stats.ttl>
+
+#8
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/fielding_stats.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/fielding_stats.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/fielding_stats.ttl>
+
+#9
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/pitching_stats.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/pitching_stats.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/pitching_stats.ttl>
+
+CLEAR GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/wikidata.ttl> 
+LOAD <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/wikidata.ttl>
+INTO GRAPH <http://users.dcc.uchile.cl/~jastorga/rdf/baseball/teams.ttl>
