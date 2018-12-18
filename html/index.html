@@ -1,0 +1,679 @@
+<head>
+<style>
+table, th{
+  border: 1px solid black;
+  align: left;
+  border-collapse: collapse;
+}
+
+ th, td {
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: left;
+
+}
+</style>
+</head>
+
+<body>
+<h1>
+
+Linked Baseball Sabermetrics Ontology
+</h1>
+
+<h2>
+Classes
+</h2>
+
+
+<table id='BattingStats'>
+	<tr><th>Class: </th>	<th> BattingStats </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats</th></tr>
+	<tr><th>Description:</th> <th> Batting statistics for a player in a certain season and team </th></tr>
+	<tr><th>SuperClasses</th>	<th>  </a> </th></tr>
+	<tr><th>Properties</th><th> <a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#AB" >  AB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#R" >  R </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#H" >  H </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#2B" >  2B </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#3B" >  3B </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#HR" >  HR </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#RBI" >  RBI </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SB" >  SB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#CS" >  CS </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BB" >  BB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SO" >  SO </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#IBB" >  IBB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#HBP" >  HBP </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SH" >  SH </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SF" >  SF </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GIDP" >  GIDP </a></th></tr>
+</table>
+<br>
+
+<table id='FieldingStats'>
+	<tr><th>Class: </th>	<th> FieldingStats </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats</th></tr>
+	<tr><th>Description:</th><th> Fielding statistics for a player in a certain season and team  </th></tr>
+	<tr><th>SuperClasses</th>	<th>  </a> </th></tr>
+	<tr><th>Properties</th><th>
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Pos" >  Pos </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GS" >  GS </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#InnOuts" >  InnOuts </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#PO" >  PO </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#A" >  A </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#E" >  E </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#DP" >  DP </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#PB" >  PB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#WP" >  WP </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SB" >  SB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#CS" >  CS </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#ZR" >  ZR </a> </th></tr>
+</table>
+<br>
+
+<table id='PitchingStats'>
+	<tr><th>Class: </th>	<th> PitchingStats </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats</th></tr>
+	<tr><th>Description:</th> <th> Pitching statistics for a player in a certain season and team </th></tr>
+	<tr><th>SuperClasses</th>	<th>  </a> </th></tr>
+	<tr><th>Properties</th><th> 
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#W"> W </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#L"> L </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GS"> GS </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#CG"> CG </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SHO"> SHO </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SV"> SV </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#IPOuts"> IPOuts </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#H"> H </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#ER"> ER </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BB"> BB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SO"> SO </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BAOpp"> BAOpp </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#ERA"> ERA </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#IBB"> IBB </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#WP"> WP </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#HBP"> HBP </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BK"> BK </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BFP"> BFP </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GF"> GF </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#RA"> RA </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SH"> SH </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SHO"> SHO </a>,
+<a href="http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GIDP"> GIDP </a> </th></tr>
+</table>
+<br>
+
+
+<table id='PlayerSeason'>
+	<tr><th>Class: </th>	<th> PlayerSeason </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#PlayerSeason</th></tr>
+	<tr><th>Description:</th> <th> Season of a certain baseball Player  </th></tr>
+	<tr><th>SuperClasses</th>	<th>  </a> </th></tr>
+	<tr><th>Properties</th><th> 
+</table>
+<br>
+
+
+<table id='Team'>
+	<tr><th>Class: </th>	<th> Team </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team</th></tr>
+	<tr><th>Description:</th> <th> Baseball Team </th></tr>
+	<tr><th>SuperClasses</th>	<th>  </a> </th></tr>
+	<tr><th>Properties</th><th> 
+</table>
+<br>
+
+
+<table id='SeasonParticipation'>
+	<tr><th>Class: </th>	<th> SeasonParticipation </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SeasonParticipation</th></tr>
+	<tr><th>Description:</th> <th> Season of a certain baseball team  </th></tr>
+	<tr><th>SuperClasses</th>	<th>  </a> </th></tr>
+	<tr><th>Properties</th><th> 
+</table>
+<br>
+
+
+
+<h2>
+Properties
+</h2>
+
+
+<table id='statsOf'>
+	<tr><th>Property: </th>	<th> statsOf </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#statsOf </th></tr>
+	<tr><th>Description:</th>	<th> whose this stats belongs </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a>, <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a>, <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PlayerSeason"> PlayerSeason </a>, <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#SeasonParticipation"> SeasonParticipation </a>   </th></tr>
+</table>
+<br>
+
+
+<table id='season'>
+	<tr><th>Property: </th>	<th> season </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#season </th></tr>
+	<tr><th>Description:</th> 	<th> Season Year</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PlayerSeason"> PlayerSeason </a>, 
+	 <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#SeasonParticipation"> SeasonParticipation </a> </th></tr>
+	<tr><th>Range</th><th> xsd:gYear </th></tr>
+</table>
+<br>
+
+
+<table id='seasonOf'>
+	<tr><th>Property: </th>	<th> seasonOf </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#seasonOf </th></tr>
+	<tr><th>Description:</th> 	<th> Whose season </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PlayerSeason"> PlayerSeason </a>, 
+	 <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#SeasonParticipation"> SeasonParticipation </a> </th></tr>
+	<tr><th>Range</th><th><a href=""> foaf:Person </a>, 
+	 <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team"> Team </a>   </th></tr>
+</table>
+<br>
+
+<h4>  Team Season Related Properties <h4>
+
+<h4>  Player Season Related Properties <h4>
+
+<table id='playedIn'>
+	<tr><th>Property: </th>	<th> playedIn </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#playedIn </th></tr>
+	<tr><th>Description:</th> 	<th> Team where the baseball player play during the season </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PlayerSeason"> PlayerSeason </a> </th></tr>
+	<tr><th>Range</th><th>  <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#Team"> Team </a>  </th></tr>
+</table>
+<br>
+
+
+
+<h4> General Player Stats Related Properties <h4>
+<table id='stint'>
+	<tr><th>Property: </th>	<th> stint </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#stint </th></tr>
+	<tr><th>Description:</th>	<th> order of appearances within a season </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a>, <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a>, <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='G'>
+	<tr><th>Property: </th>	<th> G </th> </tr>
+	<tr><th>URI: </th><th>  http://users.dcc.uchile.cl/~jastorga/rdf/baseball#G </th></tr>
+	<tr><th>Description:</th>	<th> Games Played </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a><a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<h4> Batting Stats Related Properties <h4>
+<table id='AB'>
+	<tr><th>Property: </th>	<th> AB </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#AB </th></tr>
+	<tr><th>Description:</th><th> At Bats</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='R'>
+	<tr><th>Property: </th>	<th> R </th>  </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#R </th></tr>
+	<tr><th>Description:</th> <th> Runs</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='H'>
+	<tr><th>Property: </th>	<th> H </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#H </th></tr>
+	<tr><th>Description:</th>	<th>Hits </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='2B'>
+	<tr><th>Property: </th>	<th> 2B</th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#2B </th></tr>
+	<tr><th>Description:</th><th>Doubles </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='3B'>
+	<tr><th>Property: </th>	<th> 3B </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#3B </th></tr>
+	<tr><th>Description:</th><th>Triples </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='HR'>
+	<tr><th>Property: </th>	<th> HR </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#HR </th></tr>
+	<tr><th>Description:</th><th>Homeruns  </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='RBI'>
+	<tr><th>Property: </th>	<th> RBI</th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#RBI </th></tr>
+	<tr><th>Description:</th> <th>Runs Batted In </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='SB'>
+	<tr><th>Property: </th>	<th> SB </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SB </th></tr>
+	<tr><th>Description:</th> <th>Stolen Bases </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='CS'>
+	<tr><th>Property: </th>	<th> CS </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#CS </th></tr>
+	<tr><th>Description:</th><th>Caught Stealing  </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='BB'>
+	<tr><th>Property: </th>	<th> BB </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BB </th></tr>
+	<tr><th>Description:</th><th>Base on Balls </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='SO'>
+	<tr><th>Property: </th>	<th> SO </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SO </th></tr>
+	<tr><th>Description:</th><th> StrikeOuts</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='IBB'>
+	<tr><th>Property: </th>	<th> IBB </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#IBB </th></tr>
+	<tr><th>Description:</th><th>StrikeOuts </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='HBP'>
+	<tr><th>Property: </th>	<th> HBP </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#HBP </th></tr>
+	<tr><th>Description:</th>	<th>Hit by Pitch </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='SH'>
+	<tr><th>Property: </th>	<th> SH </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SH </th></tr>
+	<tr><th>Description:</th><th>Sacrifice Hits	 </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='SF'>
+	<tr><th>Property: </th>	<th> SF </th></tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SF </th></tr>
+	<tr><th>Description:</th> <th>Sacrifice Flies </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+<table id='GIDP'>
+	<tr><th>Property: </th>	<th> GIDP </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GIDP </th></tr>
+	<tr><th>Description:</th>	<th>Grounded into double plays	 </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#BattingStats"> BattingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<h4> Fielding Stats Related Properties <h4>
+
+<table id='Pos'>
+	<tr><th>Property: </th>	<th> Pos </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#Pos </th></tr>
+	<tr><th>Description:</th>	<th> Position</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='GS'>
+	<tr><th>Property: </th>	<th> GS </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GS </th></tr>
+	<tr><th>Description:</th>	<th> Games Started</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='InnOuts'>
+	<tr><th>Property: </th>	<th> InnOuts </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#InnOuts </th></tr>
+	<tr><th>Description:</th>	<th> Time played in the field expressed as outs</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='PO'>
+	<tr><th>Property: </th>	<th> PO </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#PO </th></tr>
+	<tr><th>Description:</th>	<th> Putouts</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='A'>
+	<tr><th>Property: </th>	<th> A </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#A </th></tr>
+	<tr><th>Description:</th>	<th> Assists</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='E'>
+	<tr><th>Property: </th>	<th> E </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#E </th></tr>
+	<tr><th>Description:</th>	<th> Errors</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='DP'>
+	<tr><th>Property: </th>	<th> DP </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#DP </th></tr>
+	<tr><th>Description:</th>	<th> Putouts</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='PB'>
+	<tr><th>Property: </th>	<th> PB </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#PB </th></tr>
+	<tr><th>Description:</th>	<th> Passed Balls (by catchers) </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='WP'>
+	<tr><th>Property: </th>	<th> WP </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#WP </th></tr>
+	<tr><th>Description:</th>	<th> Wild Pitches (by catches)</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='SB'>
+	<tr><th>Property: </th>	<th> SB </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SB </th></tr>
+	<tr><th>Description:</th>	<th>Opponents Stolen Bases (by catchers) </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='CS'>
+	<tr><th>Property: </th>	<th> CS </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#CS </th></tr>
+	<tr><th>Description:</th>	<th> Opponents Caught Stealing (by catchers) </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='ZR'>
+	<tr><th>Property: </th>	<th> ZR </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#ZR </th></tr>
+	<tr><th>Description:</th>	<th>Zone Rating </th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#FieldingStats"> FieldingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+
+<h4> Pitching Stats Related Properties <h4>
+
+<table id='W'>
+	<tr><th>Property: </th>	<th> W </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#W </th></tr>
+	<tr><th>Description:</th>	<th> Games Wins</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='L'>
+	<tr><th>Property: </th>	<th> L </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#L </th></tr>
+	<tr><th>Description:</th>	<th> Games Losses</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='GS'>
+	<tr><th>Property: </th>	<th> GS </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GS </th></tr>
+	<tr><th>Description:</th>	<th> Games Start</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='CG'>
+	<tr><th>Property: </th>	<th> CG </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#CG </th></tr>
+	<tr><th>Description:</th>	<th> Complete Games</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='SHO'>
+	<tr><th>Property: </th>	<th> SHO </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SHO </th></tr>
+	<tr><th>Description:</th>	<th> Shutouts</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='SV'>
+	<tr><th>Property: </th>	<th> SV </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SV </th></tr>
+	<tr><th>Description:</th>	<th> Saves</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='IPOuts'>
+	<tr><th>Property: </th>	<th> IPOuts </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#IPOuts </th></tr>
+	<tr><th>Description:</th>	<th> Outs Pitched (innings pitched x3 )</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='H'>
+	<tr><th>Property: </th>	<th> H </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#H </th></tr>
+	<tr><th>Description:</th>	<th> Hits</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+<table id='ER'>
+	<tr><th>Property: </th>	<th> ER </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#ER </th></tr>
+	<tr><th>Description:</th>	<th> Earned Runs</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='BB'>
+	<tr><th>Property: </th>	<th> BB </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BB </th></tr>
+	<tr><th>Description:</th>	<th> Walks</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='SO'>
+	<tr><th>Property: </th>	<th> SO </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SO </th></tr>
+	<tr><th>Description:</th>	<th> Strikeouts</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='BAOpp'>
+	<tr><th>Property: </th>	<th> BAOpp </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BAOpp </th></tr>
+	<tr><th>Description:</th>	<th> Opponent's Batting Average</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='ERA'>
+	<tr><th>Property: </th>	<th> ERA </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#ERA </th></tr>
+	<tr><th>Description:</th>	<th> Earned Run Average</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='IBB'>
+	<tr><th>Property: </th>	<th> IBB </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#IBB </th></tr>
+	<tr><th>Description:</th>	<th> Intentional Walks</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='WP'>
+	<tr><th>Property: </th>	<th> WP </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#WP </th></tr>
+	<tr><th>Description:</th>	<th> Wild Pitches</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='HBP'>
+	<tr><th>Property: </th>	<th> HBP </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#HBP </th></tr>
+	<tr><th>Description:</th>	<th> Batters Hit By Pitch</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+
+<br>
+
+
+<table id='BK'>
+	<tr><th>Property: </th>	<th> BK </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BK </th></tr>
+	<tr><th>Description:</th>	<th> Balks</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='BFP'>
+	<tr><th>Property: </th>	<th> BFP </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#BFP </th></tr>
+	<tr><th>Description:</th>	<th> Batters faced by Pitcher</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='GF'>
+	<tr><th>Property: </th>	<th> GF </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GF </th></tr>
+	<tr><th>Description:</th>	<th> Games Finished</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='RA'>
+	<tr><th>Property: </th>	<th> RA </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#RA </th></tr>
+	<tr><th>Description:</th>	<th> runs Allowed</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='SH'>
+	<tr><th>Property: </th>	<th> SH </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SH </th></tr>
+	<tr><th>Description:</th>	<th> Sacrifices by Opposing Batters</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='SF'>
+	<tr><th>Property: </th>	<th> SHO </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#SHO </th></tr>
+	<tr><th>Description:</th>	<th> Sacrifice fliess by opposing batters</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+
+
+<table id='GIDP'>
+	<tr><th>Property: </th>	<th> GIDP </th> </tr>
+	<tr><th>URI: </th><th> http://users.dcc.uchile.cl/~jastorga/rdf/baseball#GIDP </th></tr>
+	<tr><th>Description:</th>	<th> Ground into double plays by opposing batter</th></tr>
+	<tr><th>Domain</th>	<th> <a href="https://users.dcc.uchile.cl/~jastorga/rdf/baseball#PitchingStats"> PitchingStats </a> </th></tr>
+	<tr><th>Range</th><th> xsd:int </th></tr>
+</table>
+<br>
+</body>
