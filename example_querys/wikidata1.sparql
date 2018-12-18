@@ -1,0 +1,16 @@
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX baseball:<http://users.dcc.uchile.cl/~jastorga/rdf/baseball#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+
+SELECT ?team_uri ?name ?wd
+
+WHERE {
+
+    ?team_uri rdf:type baseball:Team .
+    ?debut baseball:debutOf ?team_uri .
+    ?debut baseball:debutName ?name .
+    ?team_uri owl:sameAs ?wd .
+}
+
+ORDER BY ?team_uri
